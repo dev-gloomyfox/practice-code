@@ -2,10 +2,8 @@ package com.gloomyfox.code.recursion.iteration;
 
 import com.gloomyfox.structure.Node;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -18,7 +16,7 @@ public class InorderTraversalTests {
                             new Node(6, null, null),
                             null),
                     new Node(5, null, null)),
-            new Node(3, null, null));;
+            new Node(3, null, null));
 
     private static final List<Integer> EXPECTED_LIST =
             Collections.unmodifiableList(Arrays.asList(1, 2, 4, 6, 5, 3));
