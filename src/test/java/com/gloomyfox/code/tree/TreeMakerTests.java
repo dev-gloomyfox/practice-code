@@ -1,7 +1,7 @@
 package com.gloomyfox.code.tree;
 
-import com.gloomyfox.code.recursion.iteration.InorderTraversal;
-import com.gloomyfox.code.recursion.iteration.IterativeInorderTraversal;
+import com.gloomyfox.code.recursion.iteration.PreorderTraversal;
+import com.gloomyfox.code.recursion.iteration.IterativePreorderTraversal;
 import com.gloomyfox.structure.Node;
 import org.junit.Assert;
 import org.junit.Before;
@@ -24,12 +24,12 @@ public class TreeMakerTests {
                     new Node(7, null, null)));
 
     private TreeMaker maker;
-    private InorderTraversal traversal;
+    private PreorderTraversal traversal;
 
     @Before
     public void setUp() {
         maker = new TreeMaker();
-        traversal = new IterativeInorderTraversal();
+        traversal = new IterativePreorderTraversal();
     }
 
     @Test

@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class InorderTraversalTests {
+public class PreorderTraversalTests {
 
     private static final Node TEST_NODE = new Node(1,
             new Node(2,
@@ -23,13 +23,13 @@ public class InorderTraversalTests {
 
     @Test
     public void recursivePreorderTest() {
-        InorderTraversal traversal = new RecursiveInorderTraversal();
+        PreorderTraversal traversal = new RecursivePreorderTraversal();
         Assert.assertEquals(EXPECTED_LIST, traversal.traverse(TEST_NODE));
     }
 
     @Test
     public void iterativePreorderTest() {
-        InorderTraversal traversal = new IterativeInorderTraversal();
+        PreorderTraversal traversal = new IterativePreorderTraversal();
         Assert.assertEquals(EXPECTED_LIST, traversal.traverse(TEST_NODE));
     }
 }

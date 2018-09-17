@@ -5,7 +5,7 @@ import com.gloomyfox.structure.Node;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IterativeInorderTraversal implements InorderTraversal {
+public class IterativePreorderTraversal implements PreorderTraversal {
 
     @Override
     public List<Integer> traverse(Node node) {

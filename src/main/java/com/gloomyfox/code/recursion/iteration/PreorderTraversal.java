@@ -4,6 +4,6 @@ import com.gloomyfox.structure.Node;
 
 import java.util.List;
 
-public interface InorderTraversal {
+public interface PreorderTraversal {
     List<Integer> traverse(Node node);
 }
